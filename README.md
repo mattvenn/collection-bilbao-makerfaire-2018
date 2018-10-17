@@ -13,13 +13,6 @@
 
 ## Examples
 
-## Languages
-
-| Language | Translated strings |
-|:--------:|:------------------:|
-| en | ![Progress](http://progressed.io/bar/100) |
-| es_ES | ![Progress](http://progressed.io/bar/0) |
-
 ## Authors
 
 * [Matt Venn](https://github.com/mattvenn)
