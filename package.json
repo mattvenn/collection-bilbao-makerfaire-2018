@@ -1,18 +1,18 @@
 {
-  "name": "Default",
-  "version": "0.1",
-  "description": "Bilbao Makerfaire collection in Icestudio",
-  "keywords": "bilba, makerfaire, 2018, collection",
+  "name": "MyCollection",
+  "version": "0.1.0",
+  "description": "Awesome collection",
+  "keywords": "awesome,template",
   "license": "GPL-2.0",
-  "authors" : [
-    {
-      "name": "Matt Venn",
-      "url": "https://github.com/mattvenn"
-    },
-  ],
+  "authors": [{
+    "name": "",
+    "email": "",
+    "url": ""
+  }],
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattvenn/collection-bilbao-makerfaire-2018"
+    "branch": "master",
+    "url": ""
   }
 }
