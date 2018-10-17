@@ -3,7 +3,7 @@
   "package": {
     "name": "8bit compare",
     "version": "",
-    "description": "compares an internal 8 bit counter with the compare parameter, when the number is reached, reset and set the overflow signal",
+    "description": "compares an internal 8 bit counter with the compare parameter, when the number is reached, reset the counter and invert the output",
     "author": "Matt Venn",
     "image": ""
   },
@@ -35,7 +35,7 @@
           "id": "b1b66842-b5b1-4806-82be-d1812d935a0b",
           "type": "basic.output",
           "data": {
-            "name": "overflow",
+            "name": "output",
             "pins": [
               {
                 "index": "0",
@@ -67,7 +67,7 @@
           "id": "a1621201-6c33-4378-9eaf-71d901b0bfdd",
           "type": "basic.code",
           "data": {
-            "code": "// use a register to count\nreg [7:0] count = 0;\nreg overflow = 0;\n\n// every clock, increment counter\nalways @(posedge clk) begin\n    count <= count + 1;\n// if counter == compare, reset and set overflow\n    if (count == compare) begin\n        count <= 0;\n        overflow <= ! overflow;\n    end\nend",
+            "code": "// use a register to count\nreg [7:0] count = 0;\nreg out = 0;\n\n// every clock, increment counter\nalways @(posedge clk) begin\n    count <= count + 1;\n// if counter == compare, reset and invert output\n    if (count == compare) begin\n        count <= 0;\n        out <= ! out;\n    end\nend",
             "params": [
               {
                 "name": "compare"
@@ -81,7 +81,7 @@
               ],
               "out": [
                 {
-                  "name": "overflow"
+                  "name": "out"
                 }
               ]
             }
@@ -120,7 +120,7 @@
         {
           "source": {
             "block": "a1621201-6c33-4378-9eaf-71d901b0bfdd",
-            "port": "overflow"
+            "port": "out"
           },
           "target": {
             "block": "b1b66842-b5b1-4806-82be-d1812d935a0b",

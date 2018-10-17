@@ -1,38 +1,39 @@
-# Bilbao Makerfaire Beginner's FPGA Workshop Collection
+# Bilbao Makerfaire 2018 Collection
 
 [![Icestudio](https://img.shields.io/badge/collection-icestudio-blue.svg)](https://github.com/FPGAwars/icestudio)
-![Version](https://img.shields.io/badge/version-v0.3.3-orange.svg)
+![Version](https://img.shields.io/badge/version-v0.1.0-orange.svg)
+
+Bilbao Makerfaire 2018.
 
 ## Install
 
-* Download the collection: [stable](https://github.com/mattvenn/collection-bilbao-makerfaire-2018/archive/0.1.zip)
+* Download the collection: [stable](https://github.com/mattvenn/collection-bilbao-makerfaire-2018/archive/v0.1.0.zip) or [development](https://github.com/mattvenn/collection-bilbao-makerfaire-2018/archive/master.zip)
 * Install the collection: *Tools > Collections > Add*
 * Load the collection: *Select > Collection*
 
 ## Blocks
-
-* *VGA*
-    * vga
-
 * *Counter*
-    * 4bit counter
-    * 8bit compare
+  * 4bit counter
+  * 8bit compare
+* *VGA*
+  * vga
 
 ## Examples
-
-* *VGA*
-    * red
-    * buttons
-    * template
-
+* *Buttons*
+  * button logic
 * *LEDs*
-    * simple
-    * counter
-    * different rates
+  * counter
+  * different rates
+  * led sequence
+  * simple
+* *VGA*
+  * buttons
+  * red
+  * template
+
 
 ## Authors
-
-* [Matt Venn](https://github.com/mattvenn)
+* [matt venn](github.com/mattvenn)
 
 
 ## License

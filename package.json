@@ -1,18 +1,18 @@
 {
-  "name": "MyCollection",
+  "name": "Bilbao Makerfaire 2018",
   "version": "0.1.0",
-  "description": "Awesome collection",
-  "keywords": "awesome,template",
+  "description": "Bilbao Makerfaire 2018",
+  "keywords": "bilbao, makerfaire, 2018",
   "license": "GPL-2.0",
   "authors": [{
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "matt venn",
+    "email": "matt@mattvenn.net",
+    "url": "github.com/mattvenn"
   }],
   "contributors": [],
   "repository": {
     "type": "git",
     "branch": "master",
-    "url": ""
+    "url": "https://github.com/mattvenn/collection-bilbao-makerfaire-2018"
   }
 }
