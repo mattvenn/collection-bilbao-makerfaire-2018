@@ -5,13 +5,30 @@
 
 ## Install
 
-* Download the collection: [stable](https://github.com/mattvenn/collection-bilbao-makerfaire-2018/archive/v0.1.zip)
+* Download the collection: [stable](https://github.com/mattvenn/collection-bilbao-makerfaire-2018/archive/0.1.zip)
 * Install the collection: *Tools > Collections > Add*
 * Load the collection: *Select > Collection*
 
 ## Blocks
 
+* *VGA*
+    * vga
+
+* *Counter*
+    * 4bit counter
+    * 8bit compare
+
 ## Examples
+
+* *VGA*
+    * red
+    * buttons
+    * template
+
+* *LEDs*
+    * simple
+    * counter
+    * different rates
 
 ## Authors
 
