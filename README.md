@@ -13,6 +13,7 @@ Bilbao Makerfaire 2018.
 
 ## Blocks
 * *Counter*
+  * 10bit compare
   * 4bit counter
   * 8bit compare
 * *VGA*
@@ -28,7 +29,10 @@ Bilbao Makerfaire 2018.
   * simple
 * *VGA*
   * buttons
+  * cross
+  * half blue
   * red
+  * sequence
   * template
 
 

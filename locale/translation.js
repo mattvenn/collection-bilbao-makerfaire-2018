@@ -9,6 +9,8 @@
 
 gettext('Counter');
 gettext('VGA');
+gettext('10bit compare');
+gettext('compares a 10bit input with a parameter. Has 3 outputs that are true if less, more or equal.');
 gettext('4bit counter');
 gettext('4 bit counter');
 gettext('8bit compare');
@@ -28,6 +30,9 @@ gettext('led sequence');
 gettext('simple');
 gettext('Assign 1 to the output wire');
 gettext('buttons');
-gettext('red');
+gettext('cross');
 gettext('Assign 0 to the output wire');
+gettext('half blue');
+gettext('red');
+gettext('sequence');
 gettext('template');
