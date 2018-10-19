@@ -127,6 +127,26 @@
           }
         },
         {
+          "id": "7b61c9a3-221b-4586-8744-fd3aeb4002d1",
+          "type": "basic.input",
+          "data": {
+            "name": "clk",
+            "pins": [
+              {
+                "index": "0",
+                "name": "CLK",
+                "value": "35"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 200,
+            "y": 200
+          }
+        },
+        {
           "id": "bd0e1792-4d56-45d7-9a12-d6818a020e68",
           "type": "basic.input",
           "data": {
@@ -541,6 +561,16 @@
               "y": 136
             }
           ]
+        },
+        {
+          "source": {
+            "block": "7b61c9a3-221b-4586-8744-fd3aeb4002d1",
+            "port": "out"
+          },
+          "target": {
+            "block": "5d4f0d27-721a-4d4a-9f74-fec2b212972d",
+            "port": "0cff5d55-db6d-4d16-8f99-363e3658bc57"
+          }
         }
       ]
     }
