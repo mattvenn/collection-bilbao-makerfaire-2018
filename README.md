@@ -23,11 +23,13 @@ Bilbao Makerfaire 2018.
 * *Buttons*
   * button logic
 * *LEDs*
+  * counter reverse
   * counter
   * different rates
   * led sequence
   * simple
 * *VGA*
+  * adjustable wipe
   * buttons
   * cross
   * half blue

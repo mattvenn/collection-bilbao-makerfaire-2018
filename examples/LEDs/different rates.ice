@@ -46,46 +46,8 @@
             "clock": false
           },
           "position": {
-            "x": 88,
-            "y": 472
-          }
-        },
-        {
-          "id": "d207989d-f4bd-40ee-9bee-343f8285af98",
-          "type": "basic.output",
-          "data": {
-            "name": "led",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED2",
-                "value": "25"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 696,
-            "y": 472
-          }
-        },
-        {
-          "id": "f934e419-9ca5-447f-a7f8-bd33af31d6aa",
-          "type": "basic.output",
-          "data": {
-            "name": "led",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED3",
-                "value": "21"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 688,
-            "y": 728
+            "x": 24,
+            "y": 208
           }
         },
         {
@@ -97,25 +59,12 @@
             "local": false
           },
           "position": {
-            "x": 248,
-            "y": 352
+            "x": 184,
+            "y": 88
           }
         },
         {
           "id": "44b5a1d1-e81b-4ad6-9593-784d53bd94aa",
-          "type": "basic.constant",
-          "data": {
-            "name": "compare",
-            "value": "100",
-            "local": false
-          },
-          "position": {
-            "x": 504,
-            "y": 72
-          }
-        },
-        {
-          "id": "1333ccc9-43e6-4710-befe-001ab48cf062",
           "type": "basic.constant",
           "data": {
             "name": "compare",
@@ -124,28 +73,15 @@
           },
           "position": {
             "x": 504,
-            "y": 336
-          }
-        },
-        {
-          "id": "b4be0ef1-af33-4545-a6e0-f39b5f5b0c0e",
-          "type": "basic.constant",
-          "data": {
-            "name": "compare",
-            "value": "10",
-            "local": false
-          },
-          "position": {
-            "x": 504,
-            "y": 592
+            "y": 72
           }
         },
         {
           "id": "d02f4928-0591-4147-8436-d71dbd09a33e",
           "type": "6a50747141af6d1cfb3bb9d0093fb94862ff5a65",
           "position": {
-            "x": 248,
-            "y": 472
+            "x": 184,
+            "y": 208
           },
           "size": {
             "width": 96,
@@ -165,27 +101,35 @@
           }
         },
         {
-          "id": "8667fb42-8b03-4163-a9e4-b5c382af0e34",
-          "type": "29a5f77475590b1c7eec8e70da3e0250610fa457",
+          "id": "8335e93b-f7dd-47fd-b3c7-2354b3116a2f",
+          "type": "basic.info",
+          "data": {
+            "info": "the clock is running at 12MHz,\nso use PrescalarN to slow it down.\nWith a width of 17, the clock runs 2^17 times slower.\n\n2^17 is 131,072 !\nso instead of 12Mhz, the output of PrescalarN is\nabout 90Hz - 90 times a second.",
+            "readonly": false
+          },
           "position": {
-            "x": 504,
-            "y": 472
+            "x": -72,
+            "y": 296
           },
           "size": {
-            "width": 96,
-            "height": 64
+            "width": 432,
+            "height": 184
           }
         },
         {
-          "id": "e1ab81c5-4322-4c2f-a7e2-2ea934ec1fb6",
-          "type": "29a5f77475590b1c7eec8e70da3e0250610fa457",
+          "id": "d23a3b07-dfde-41e6-b0ab-47ba34745253",
+          "type": "basic.info",
+          "data": {
+            "info": "the 8bit compare block counts up whenever\nthe clock goes high.\n\nWhen the number set by the compare input\nis reached, the output toggles.\n\nSo with a setting of 90, we expect the\noutput to toggle once per second. This\nmeans the LED will be on for 1 second and\nthen off for 1 second.",
+            "readonly": false
+          },
           "position": {
-            "x": 504,
-            "y": 728
+            "x": 488,
+            "y": 296
           },
           "size": {
-            "width": 96,
-            "height": 64
+            "width": 344,
+            "height": 192
           }
         }
       ],
@@ -219,12 +163,7 @@
             "block": "4a508f94-57cb-4441-a855-8dc154a416bc",
             "port": "22f7e37d-4dd2-4ffc-9e49-84c2c8714dea"
           },
-          "vertices": [
-            {
-              "x": 416,
-              "y": 440
-            }
-          ]
+          "vertices": []
         },
         {
           "source": {
@@ -245,75 +184,6 @@
             "block": "d7012f79-5776-491a-9264-f642307f6af1",
             "port": "in"
           }
-        },
-        {
-          "source": {
-            "block": "8667fb42-8b03-4163-a9e4-b5c382af0e34",
-            "port": "b1b66842-b5b1-4806-82be-d1812d935a0b"
-          },
-          "target": {
-            "block": "d207989d-f4bd-40ee-9bee-343f8285af98",
-            "port": "in"
-          },
-          "vertices": []
-        },
-        {
-          "source": {
-            "block": "1333ccc9-43e6-4710-befe-001ab48cf062",
-            "port": "constant-out"
-          },
-          "target": {
-            "block": "8667fb42-8b03-4163-a9e4-b5c382af0e34",
-            "port": "67efe1c0-0f18-4126-9cf2-103f0a926a7f"
-          },
-          "vertices": []
-        },
-        {
-          "source": {
-            "block": "b4be0ef1-af33-4545-a6e0-f39b5f5b0c0e",
-            "port": "constant-out"
-          },
-          "target": {
-            "block": "e1ab81c5-4322-4c2f-a7e2-2ea934ec1fb6",
-            "port": "67efe1c0-0f18-4126-9cf2-103f0a926a7f"
-          },
-          "vertices": []
-        },
-        {
-          "source": {
-            "block": "e1ab81c5-4322-4c2f-a7e2-2ea934ec1fb6",
-            "port": "b1b66842-b5b1-4806-82be-d1812d935a0b"
-          },
-          "target": {
-            "block": "f934e419-9ca5-447f-a7f8-bd33af31d6aa",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "d02f4928-0591-4147-8436-d71dbd09a33e",
-            "port": "7e07d449-6475-4839-b43e-8aead8be2aac"
-          },
-          "target": {
-            "block": "8667fb42-8b03-4163-a9e4-b5c382af0e34",
-            "port": "22f7e37d-4dd2-4ffc-9e49-84c2c8714dea"
-          }
-        },
-        {
-          "source": {
-            "block": "d02f4928-0591-4147-8436-d71dbd09a33e",
-            "port": "7e07d449-6475-4839-b43e-8aead8be2aac"
-          },
-          "target": {
-            "block": "e1ab81c5-4322-4c2f-a7e2-2ea934ec1fb6",
-            "port": "22f7e37d-4dd2-4ffc-9e49-84c2c8714dea"
-          },
-          "vertices": [
-            {
-              "x": 416,
-              "y": 680
-            }
-          ]
         }
       ]
     }
