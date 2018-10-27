@@ -107,6 +107,26 @@
           }
         },
         {
+          "id": "b5bbfbfe-d783-4a69-a45d-9dce9aa65996",
+          "type": "basic.input",
+          "data": {
+            "name": "clk",
+            "pins": [
+              {
+                "index": "0",
+                "name": "CLK",
+                "value": "35"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 232,
+            "y": 208
+          }
+        },
+        {
           "id": "3b82cf4f-32c5-405d-8d0c-3ac6885fcca5",
           "type": "basic.output",
           "data": {
@@ -497,6 +517,16 @@
           "target": {
             "block": "41871c4e-504f-4fe7-b11a-909d471ba829",
             "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+          }
+        },
+        {
+          "source": {
+            "block": "b5bbfbfe-d783-4a69-a45d-9dce9aa65996",
+            "port": "out"
+          },
+          "target": {
+            "block": "5d4f0d27-721a-4d4a-9f74-fec2b212972d",
+            "port": "0cff5d55-db6d-4d16-8f99-363e3658bc57"
           }
         }
       ]
