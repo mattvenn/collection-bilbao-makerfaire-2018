@@ -16,8 +16,14 @@ Bilbao Makerfaire 2018.
   * 10bit compare
   * 4bit counter
   * 8bit compare
+  * 8bit counter
+* *Utilities*
+  * 8-to-24-merge
+  * const8
 * *VGA*
   * vga
+* *WS2812*
+  * ws2812
 
 ## Examples
 * *Buttons*
@@ -36,6 +42,9 @@ Bilbao Makerfaire 2018.
   * red
   * sequence
   * template
+* *WS2812*
+  * ws2812-fade
+  * ws2812-simple
 
 
 ## Authors
